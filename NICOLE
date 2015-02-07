@@ -16,7 +16,7 @@
                 
                 // modify the default marker options to use a custom image
                 tomtom.Marker.DEFAULT_MARKER_OPTIONS = {
-                    iconUrl: "photo.png", 
+                    iconUrl: "atmblack.png", 
                     iconSize: [32, 37],
                     iconAnchor: [ 17, 34 ]
                 };
@@ -38,6 +38,24 @@
                 
             };
         </script>
+
+        <script>
+            var data;
+            var service = new tomtom.services.GeocodingService("3czvjrwupf7bz7n24n7cpdkd");
+            service.geocode("https://api.tomtom.com/lbs/services/geocode/4/geocode?PC=30332&FN=hotel%2Fmotel&key=3czvjrwupf7bz7n24n7cpdkd", function(response) { data = response; });
+            var parsedata = $.parseXML(data);
+            console.log($(parsedata).find("latitude"));
+            console.log($(parsedata).find("longitude"));
+
+            var latitude = $(parsedata).find("latitude");
+            var longitude = $(parsedata).find("longitude");
+
+            for (var i = 1; i < latitude.length; i++) {
+               map.addLayer(new tomtom.Marker([latitude[i], longitude[i]]));
+            }
+        </script>
+
+
         <style type="text/css">
             html, body {
                 width: 100%;
