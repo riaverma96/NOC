@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<title>
+Interactive Map
+</title>
+
+<head>
+<h1>Documenting instances of racism, sexism and violence</h1>
+<script src="jquery-1.11.2.min.js"></script>
+<script>
+    var foo = function(data){
+    //do something
+    };
+
+    $.ajax({
+    url: 'hostname/atms?api-key=your_key',
+    success: foo(results)
+    });
+     
+</script>
+</head>
+<body>
+
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+</body>
+</html>
