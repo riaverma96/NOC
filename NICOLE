@@ -16,7 +16,7 @@
                 
                 // modify the default marker options to use a custom image
                 tomtom.Marker.DEFAULT_MARKER_OPTIONS = {
-                    iconUrl: "atmblack.png", 
+                    iconUrl: "photo.png", 
                     iconSize: [32, 37],
                     iconAnchor: [ 17, 34 ]
                 };
