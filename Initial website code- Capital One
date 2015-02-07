@@ -11,11 +11,7 @@ Interactive Map
 <!link rel="stylesheet" type="text/css" href="homepage.css" />
 <!script type="text/javascript" src="homepage.js"></script>
  
-  <body>
-    <h1>Hello, this is a picture of my cat!</h1>
-    <img src="cat.jpg" />
-    <a href="mailto:cat@codecademy.com">Email my cat</a>
-  </body>
+
 
 <script>
     var foo = function(data){
