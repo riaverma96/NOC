@@ -14,7 +14,7 @@ Interactive Map
     };
 
     $.ajax({
-    url: 'hostname/atms?api-key=your_key',
+    url: 'hostname/atms?api-key=ENT120e293019ec3b743848f33d85b794d1',
     success: foo(results)
     });
      
