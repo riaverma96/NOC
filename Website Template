@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>SafeStay</title>
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;          
+}
+#section {
+    width:1100px;
+    float:left;
+    padding:10px;        
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;      
+}
+</style>
+</head>
+
+<body>
+
+<div id="header">
+<h1>SafeStay</h1>
+</div>
+
+<div id="nav" align="center">
+Created by:<br>
+<hr></hr>
+Ria V<br>
+Amreeta D<br>
+Jasmine P<br>
+Nicole H<br>
+</div>
+
+<div id="section">
+<h2 align="center">About</h2>
+<p align="center">Put info about it here.</p>
+<div style="text-align:center">    
+  <a href="NICOLE.html">The Map</a>
+</div>
+</div>
+
+
+<div id="footer">
+VTHacks 2015
+</div>
+
+</body>
+</html>
