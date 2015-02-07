@@ -40,7 +40,7 @@
         </script>
 
         <script>
-            var data;
+            /*var data;
             var service = new tomtom.services.GeocodingService("3czvjrwupf7bz7n24n7cpdkd");
             service.geocode("https://api.tomtom.com/lbs/services/geocode/4/geocode?PC=30332&FN=hotel%2Fmotel&key=3czvjrwupf7bz7n24n7cpdkd", function(response) { data = response; });
             var parsedata = $.parseXML(data);
@@ -52,7 +52,28 @@
 
             for (var i = 1; i < latitude.length; i++) {
                map.addLayer(new tomtom.Marker([latitude[i], longitude[i]]));
-            }
+            }*/
+        function setPoints(longitude, latitude) {
+            // Request the JSON and process it
+            $.ajax({
+                type:'GET',
+                url:"https://api.tomtom.com/lbs/services/geocode/4/geocode?PC=30332&FN=hotel%2Fmotel&key=3czvjrwupf7bz7n24n7cpdkd",
+                data:"longitude="+longitude+"latitude="+latitude+"format=json&jsoncallback=?",
+                success:function(longitude, latitude) {
+                    // Create an empty array to store????????
+                    var latitudes = [];
+                    var longitudes = [];
+
+                    // Loop through the items
+                    for(var i = 0; i < 6; i++) 
+                    {
+                        // create map points
+                        map.addLayer(new tomtom.Marker([latitudes[i], longitudes[i]]));
+                    }
+                },
+                dataType:'jsonp'
+            });
+        }
         </script>
 
 
