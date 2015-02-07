@@ -41,8 +41,15 @@
 <body>
 
 <div id="header">
-<h1>SafeStay</h1>
+<h1>NOC</h1>
 </div>
+
+<body>
+ <h2>Spectacular Mountains</h2>
+ <img src="logo.xcf" alt="NOC" style="width:304px;height:228px">
+</body>
+
+
 
 <div id="nav" align="center">
 Created by:<br>
