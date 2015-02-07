@@ -3,6 +3,11 @@
 
 <head>
 <title>SafeStay</title>
+<link rel="stylesheet" type="text/css" href="../css/tomtom.map.min.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="../css/tomtom.map.ie.min.css" /><![endif]-->
+        <script type="text/javascript" src="../js/leaflet.js"></script>
+        <script type="text/javascript" src="../js/tomtom.map.js"></script>
+        <script type="text/javascript" src="apikey.js"></script>
 <style>
 #header {
     background-color:black;
@@ -50,7 +55,9 @@ Nicole H<br>
 
 <div id="section">
 <h2 align="center">About</h2>
-<p align="center">Put info about it here.</p>
+<p align="center">Put info about it here.
+
+</p>
 <div style="text-align:center">    
   <a href="NICOLE.html">The Map</a>
 </div>
