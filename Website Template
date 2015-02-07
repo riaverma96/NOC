@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>SafeStay</title>
+<title>NOC</title>
 <link rel="stylesheet" type="text/css" href="../css/tomtom.map.min.css" />
         <!--[if lte IE 8]><link rel="stylesheet" href="../css/tomtom.map.ie.min.css" /><![endif]-->
         <script type="text/javascript" src="../js/leaflet.js"></script>
@@ -45,7 +45,7 @@
 </div>
 
 <body>
- <h2>Spectacular Mountains</h2>
+ <h2>NOC</h2>
  <img src="logo.xcf" alt="NOC" style="width:304px;height:228px">
 </body>
 
