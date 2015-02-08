@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="/Users/riaverma/Desktop/VTHack/jquery-1.11.2.js"></script>
         <meta charset="UTF-8">
         <title>TomTom JavaScript SDK - Map</title>
         <link rel="stylesheet" type="text/css" href="../css/tomtom.map.min.css" />
@@ -8,19 +9,19 @@
         <script type="text/javascript" src="../js/leaflet.js"></script>
         <script type="text/javascript" src="../js/tomtom.map.js"></script>
         <script type="text/javascript" src="apikey.js"></script>
-        <script>        
+        <!-- <script type="text/javascript" src="/Users/riaverma/Desktop/VTHack/jquery-1.11.2.js"</script> -->
+        <script>
             window.onload = function() {
-                
                 // set the base image path used by tomtom.Marker
                 tomtom.setImagePath("../images/");
-                
+
                 // modify the default marker options to use a custom image
                 tomtom.Marker.DEFAULT_MARKER_OPTIONS = {
-                    iconUrl: "atmblack.png", 
+                    iconUrl: "photo.png",
                     iconSize: [32, 37],
                     iconAnchor: [ 17, 34 ]
                 };
-                
+
                 // create the map
                 var map = new tomtom.Map({
                     domNode: "map",
@@ -29,54 +30,208 @@
                     center: [33.7550,-84.3900],
                     zoom: 12
                 });
-                
+
                 // add some markers
                 map.addLayer(new tomtom.Marker([33.762, -84.000]));
                 map.addLayer(new tomtom.Marker([39.73845, -104.98485]));
                 map.addLayer(new tomtom.Marker([34.05224, -118.24334]));
                 map.addLayer(new tomtom.Marker([37.78008, -122.42017]));
-                
-            };
-        </script>
 
-        <script>
-            /*var data;
-            var service = new tomtom.services.GeocodingService("3czvjrwupf7bz7n24n7cpdkd");
-            service.geocode("https://api.tomtom.com/lbs/services/geocode/4/geocode?PC=30332&FN=hotel%2Fmotel&key=3czvjrwupf7bz7n24n7cpdkd", function(response) { data = response; });
-            var parsedata = $.parseXML(data);
-            console.log($(parsedata).find("latitude"));
-            console.log($(parsedata).find("longitude"));
+                setPoints();
 
-            var latitude = $(parsedata).find("latitude");
-            var longitude = $(parsedata).find("longitude");
-
-            for (var i = 1; i < latitude.length; i++) {
-               map.addLayer(new tomtom.Marker([latitude[i], longitude[i]]));
-            }*/
-        function setPoints(longitude, latitude) {
-            // Request the JSON and process it
-            $.ajax({
-                type:'GET',
-                url:"https://api.tomtom.com/lbs/services/geocode/4/geocode?PC=30332&FN=hotel%2Fmotel&key=3czvjrwupf7bz7n24n7cpdkd",
-                data:"longitude="+longitude+"latitude="+latitude+"format=json&jsoncallback=?",
-                success:function(longitude, latitude) {
-                    // Create an empty array to store????????
-                    var latitudes = [];
-                    var longitudes = [];
-
-                    // Loop through the items
-                    for(var i = 0; i < 6; i++) 
-                    {
-                        // create map points
-                        map.addLayer(new tomtom.Marker([latitudes[i], longitudes[i]]));
+                function setPoints() { //longitude, latitude
+                    console.log('about to parse');
+                    
+                    for (var i = 0; i < 6; i++) {
+                        var localLatitude = jsonData.geoResult[i].latitude;
+                        var localLongitude = jsonData.geoResult[i].longitude;
+                        var marker = new tomtom.Marker([localLatitude, localLongitude]);
+                        window.onLoad = function() { map.addLayer(marker); };
                     }
-                },
-                dataType:'jsonp'
-            });
-        }
+                    
+                    var jsonData = {"geoResult": [
+                        {
+                           "latitude":33.772552,
+                           "longitude":-84.38003,
+                           "geohash":"dn5bpuh76gcr",
+                           "mapName":"TomTomMap",
+                           "houseNumber":"229",
+                           "type":"poi",
+                           "poiCategory":"7314004",
+                           "poiName":"Atlanta Hostel",
+                           "poiImportance":"0",
+                           "poiPhone":"+(1)-(404)-8759449",
+                           "poiWebsite":"www.atlantahostel.com",
+                           "poiPositionAccuracy":"0",
+                           "poiGeocodingAccuracy":"13",
+                           "distance":0.0,
+                           "street":"Ponce de Leon Ave NE",
+                           "city":"Atlanta",
+                           "state":"Georgia",
+                           "country":"United States",
+                           "countryISO3":"USA",
+                           "postcode":"30308",
+                           "formattedAddress":"Atlanta Hostel, 229 Ponce de Leon Ave NE, Atlanta, Georgia 30308, USA",
+                           "isCensusMicropolitanFlag":false,
+                           "widthMeters":1,
+                           "heightMeters":1,
+                           "score":1.0,
+                           "confidence":0.23214783,
+                           "iteration":0
+                        },
+                        {
+                           "latitude":33.771478,
+                           "longitude":-84.361908,
+                           "geohash":"dnh007ct15f1",
+                           "mapName":"TomTomMap",
+                           "houseNumber":"790",
+                           "type":"poi",
+                           "poiCategory":"7314002",
+                           "poiName":"Bed and Breakfast Atlanta",
+                           "poiImportance":"0",
+                           "poiPhone":"+(1)-(404)-8750525",
+                           "poiPositionAccuracy":"0",
+                           "poiGeocodingAccuracy":"11",
+                           "distance":0.0,
+                           "street":"North Ave NE",
+                           "city":"Atlanta",
+                           "state":"Georgia",
+                           "country":"United States",
+                           "countryISO3":"USA",
+                           "postcode":"30306",
+                           "formattedAddress":"Bed and Breakfast Atlanta, 790 North Ave NE, Atlanta, Georgia 30306, USA",
+                           "isCensusMicropolitanFlag":false,
+                           "widthMeters":1,
+                           "heightMeters":1,
+                           "score":0.7091187238693237,
+                           "confidence":0.16462037,
+                           "iteration":0
+                        },
+                        {
+                           "latitude":33.772899,
+                           "longitude":-84.380994,
+                           "geohash":"dn5bpu5tkkdt",
+                           "mapName":"TomTomMap",
+                           "houseNumber":"198",
+                           "type":"poi",
+                           "poiCategory":"7314003",
+                           "poiName":"198 Pence Courtyard",
+                           "poiImportance":"0",
+                           "poiPhone":"+(1)-(404)-8761773",
+                           "poiBrandname":"Courtyard",
+                           "poiPositionAccuracy":"0",
+                           "poiGeocodingAccuracy":"11",
+                           "distance":0.0,
+                           "street":"Ponce de Leon Ave NE",
+                           "city":"Atlanta",
+                           "state":"Georgia",
+                           "country":"United States",
+                           "countryISO3":"USA",
+                           "postcode":"30308",
+                           "formattedAddress":"198 Pence Courtyard, 198 Ponce de Leon Ave NE, Atlanta, Georgia 30308, USA",
+                           "isCensusMicropolitanFlag":false,
+                           "widthMeters":1,
+                           "heightMeters":1,
+                           "score":0.7091187238693237,
+                           "confidence":0.16462037,
+                           "iteration":0
+                        },
+                        {
+                           "latitude":33.7732,
+                           "longitude":-84.368871,
+                           "geohash":"dnh00hhrnuf1",
+                           "mapName":"TomTomMap",
+                           "houseNumber":"551",
+                           "type":"poi",
+                           "poiCategory":"7314003",
+                           "poiName":"Ponce De Leon Hotel",
+                           "poiImportance":"0",
+                           "poiPhone":"+(1)-(404)-8731420",
+                           "poiPositionAccuracy":"0",
+                           "poiGeocodingAccuracy":"11",
+                           "distance":0.0,
+                           "street":"Ponce de Leon Ave NE",
+                           "city":"Atlanta",
+                           "state":"Georgia",
+                           "country":"United States",
+                           "countryISO3":"USA",
+                           "postcode":"30308",
+                           "formattedAddress":"Ponce De Leon Hotel, 551 Ponce de Leon Ave NE, Atlanta, Georgia 30308, USA",
+                           "isCensusMicropolitanFlag":false,
+                           "widthMeters":1,
+                           "heightMeters":1,
+                           "score":0.7091187238693237,
+                           "confidence":0.16462037,
+                           "iteration":0
+                        },
+                        {
+                           "latitude":33.749481,
+                           "longitude":-84.403434,
+                           "geohash":"djgzzrgkcrq0",
+                           "mapName":"TomTomMap",
+                           "houseNumber":"186",
+                           "type":"poi",
+                           "poiCategory":"7314003",
+                           "poiName":"Castleberry Inn & Suites",
+                           "poiImportance":"0",
+                           "poiPhone":"+(1)-(404)-8934663",
+                           "poiWebsite":"www.castleberryinn.com",
+                           "poiPositionAccuracy":"0",
+                           "poiGeocodingAccuracy":"11",
+                           "distance":0.0,
+                           "street":"Northside Dr SW",
+                           "city":"Atlanta",
+                           "state":"Georgia",
+                           "country":"United States",
+                           "countryISO3":"USA",
+                           "postcode":"30313",
+                           "formattedAddress":"Castleberry Inn & Suites, 186 Northside Dr SW, Atlanta, Georgia 30313, USA",
+                           "isCensusMicropolitanFlag":false,
+                           "widthMeters":1,
+                           "heightMeters":1,
+                           "score":0.6297875046730042,
+                           "confidence":0.1462038,
+                           "iteration":0
+                        },
+                        {
+                           "latitude":33.771024,
+                           "longitude":-84.395226,
+                           "geohash":"dn5bpec62xnm",
+                           "mapName":"TomTomMap",
+                           "houseNumber":"244",
+                           "type":"poi",
+                           "poiCategory":"7314003",
+                           "poiName":"Hampton Inn Atlanta-Georgia Tech-Downtown",
+                           "poiImportance":"0",
+                           "poiPhone":"+(1)-(404)-8810881",
+                           "poiBrandname":"Hampton Inn",
+                           "poiPositionAccuracy":"0",
+                           "poiGeocodingAccuracy":"11",
+                           "distance":0.0,
+                           "street":"North Ave NW",
+                           "city":"Atlanta",
+                           "state":"Georgia",
+                           "country":"United States",
+                           "countryISO3":"USA",
+                           "postcode":"30313",
+                           "formattedAddress":"Hampton Inn Atlanta-Georgia Tech-Downtown, 244 North Ave NW, Atlanta, Georgia 30313, USA",
+                           "isCensusMicropolitanFlag":false,
+                           "widthMeters":1,
+                           "heightMeters":1,
+                           "score":0.5504562854766846,
+                           "confidence":0.12778723,
+                           "iteration":0
+                        }
+
+                    ]};
+
+                    //console.log(jsonData.geoResult[3].latitude);
+                }
+            };
+
+
         </script>
-
-
+        
         <style type="text/css">
             html, body {
                 width: 100%;
