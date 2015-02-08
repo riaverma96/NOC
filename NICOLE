@@ -37,193 +37,239 @@
                 map.addLayer(new tomtom.Marker([34.05224, -118.24334]));
                 map.addLayer(new tomtom.Marker([37.78008, -122.42017]));
 
-                setPoints();
+                var jsonData = {"geoResult": [
+                    {
+                       "latitude":33.772552,
+                       "longitude":-84.38003,
+                       "geohash":"dn5bpuh76gcr",
+                       "mapName":"TomTomMap",
+                       "houseNumber":"229",
+                       "type":"poi",
+                       "poiCategory":"7314004",
+                       "poiName":"Atlanta Hostel",
+                       "poiImportance":"0",
+                       "poiPhone":"+(1)-(404)-8759449",
+                       "poiWebsite":"www.atlantahostel.com",
+                       "poiPositionAccuracy":"0",
+                       "poiGeocodingAccuracy":"13",
+                       "distance":0.0,
+                       "street":"Ponce de Leon Ave NE",
+                       "city":"Atlanta",
+                       "state":"Georgia",
+                       "country":"United States",
+                       "countryISO3":"USA",
+                       "postcode":"30308",
+                       "formattedAddress":"Atlanta Hostel, 229 Ponce de Leon Ave NE, Atlanta, Georgia 30308, USA",
+                       "isCensusMicropolitanFlag":false,
+                       "widthMeters":1,
+                       "heightMeters":1,
+                       "score":1.0,
+                       "confidence":0.23214783,
+                       "iteration":0
+                    },
+                    {
+                       "latitude":33.771478,
+                       "longitude":-84.361908,
+                       "geohash":"dnh007ct15f1",
+                       "mapName":"TomTomMap",
+                       "houseNumber":"790",
+                       "type":"poi",
+                       "poiCategory":"7314002",
+                       "poiName":"Bed and Breakfast Atlanta",
+                       "poiImportance":"0",
+                       "poiPhone":"+(1)-(404)-8750525",
+                       "poiPositionAccuracy":"0",
+                       "poiGeocodingAccuracy":"11",
+                       "distance":0.0,
+                       "street":"North Ave NE",
+                       "city":"Atlanta",
+                       "state":"Georgia",
+                       "country":"United States",
+                       "countryISO3":"USA",
+                       "postcode":"30306",
+                       "formattedAddress":"Bed and Breakfast Atlanta, 790 North Ave NE, Atlanta, Georgia 30306, USA",
+                       "isCensusMicropolitanFlag":false,
+                       "widthMeters":1,
+                       "heightMeters":1,
+                       "score":0.7091187238693237,
+                       "confidence":0.16462037,
+                       "iteration":0
+                    },
+                    {
+                       "latitude":33.772899,
+                       "longitude":-84.380994,
+                       "geohash":"dn5bpu5tkkdt",
+                       "mapName":"TomTomMap",
+                       "houseNumber":"198",
+                       "type":"poi",
+                       "poiCategory":"7314003",
+                       "poiName":"198 Pence Courtyard",
+                       "poiImportance":"0",
+                       "poiPhone":"+(1)-(404)-8761773",
+                       "poiBrandname":"Courtyard",
+                       "poiPositionAccuracy":"0",
+                       "poiGeocodingAccuracy":"11",
+                       "distance":0.0,
+                       "street":"Ponce de Leon Ave NE",
+                       "city":"Atlanta",
+                       "state":"Georgia",
+                       "country":"United States",
+                       "countryISO3":"USA",
+                       "postcode":"30308",
+                       "formattedAddress":"198 Pence Courtyard, 198 Ponce de Leon Ave NE, Atlanta, Georgia 30308, USA",
+                       "isCensusMicropolitanFlag":false,
+                       "widthMeters":1,
+                       "heightMeters":1,
+                       "score":0.7091187238693237,
+                       "confidence":0.16462037,
+                       "iteration":0
+                    },
+                    {
+                       "latitude":33.7732,
+                       "longitude":-84.368871,
+                       "geohash":"dnh00hhrnuf1",
+                       "mapName":"TomTomMap",
+                       "houseNumber":"551",
+                       "type":"poi",
+                       "poiCategory":"7314003",
+                       "poiName":"Ponce De Leon Hotel",
+                       "poiImportance":"0",
+                       "poiPhone":"+(1)-(404)-8731420",
+                       "poiPositionAccuracy":"0",
+                       "poiGeocodingAccuracy":"11",
+                       "distance":0.0,
+                       "street":"Ponce de Leon Ave NE",
+                       "city":"Atlanta",
+                       "state":"Georgia",
+                       "country":"United States",
+                       "countryISO3":"USA",
+                       "postcode":"30308",
+                       "formattedAddress":"Ponce De Leon Hotel, 551 Ponce de Leon Ave NE, Atlanta, Georgia 30308, USA",
+                       "isCensusMicropolitanFlag":false,
+                       "widthMeters":1,
+                       "heightMeters":1,
+                       "score":0.7091187238693237,
+                       "confidence":0.16462037,
+                       "iteration":0
+                    },
+                    {
+                       "latitude":33.749481,
+                       "longitude":-84.403434,
+                       "geohash":"djgzzrgkcrq0",
+                       "mapName":"TomTomMap",
+                       "houseNumber":"186",
+                       "type":"poi",
+                       "poiCategory":"7314003",
+                       "poiName":"Castleberry Inn & Suites",
+                       "poiImportance":"0",
+                       "poiPhone":"+(1)-(404)-8934663",
+                       "poiWebsite":"www.castleberryinn.com",
+                       "poiPositionAccuracy":"0",
+                       "poiGeocodingAccuracy":"11",
+                       "distance":0.0,
+                       "street":"Northside Dr SW",
+                       "city":"Atlanta",
+                       "state":"Georgia",
+                       "country":"United States",
+                       "countryISO3":"USA",
+                       "postcode":"30313",
+                       "formattedAddress":"Castleberry Inn & Suites, 186 Northside Dr SW, Atlanta, Georgia 30313, USA",
+                       "isCensusMicropolitanFlag":false,
+                       "widthMeters":1,
+                       "heightMeters":1,
+                       "score":0.6297875046730042,
+                       "confidence":0.1462038,
+                       "iteration":0
+                    },
+                    {
+                       "latitude":33.771024,
+                       "longitude":-84.395226,
+                       "geohash":"dn5bpec62xnm",
+                       "mapName":"TomTomMap",
+                       "houseNumber":"244",
+                       "type":"poi",
+                       "poiCategory":"7314003",
+                       "poiName":"Hampton Inn Atlanta-Georgia Tech-Downtown",
+                       "poiImportance":"0",
+                       "poiPhone":"+(1)-(404)-8810881",
+                       "poiBrandname":"Hampton Inn",
+                       "poiPositionAccuracy":"0",
+                       "poiGeocodingAccuracy":"11",
+                       "distance":0.0,
+                       "street":"North Ave NW",
+                       "city":"Atlanta",
+                       "state":"Georgia",
+                       "country":"United States",
+                       "countryISO3":"USA",
+                       "postcode":"30313",
+                       "formattedAddress":"Hampton Inn Atlanta-Georgia Tech-Downtown, 244 North Ave NW, Atlanta, Georgia 30313, USA",
+                       "isCensusMicropolitanFlag":false,
+                       "widthMeters":1,
+                       "heightMeters":1,
+                       "score":0.5504562854766846,
+                       "confidence":0.12778723,
+                       "iteration":0
+                    }
 
-                function setPoints() { //longitude, latitude
+                ]};
+
+                setPoints(map, jsonData);
+
+                function setPoints(map, jsonData) { //longitude, latitude
                     console.log('about to parse');
-                    
+
                     for (var i = 0; i < 6; i++) {
                         var localLatitude = jsonData.geoResult[i].latitude;
                         var localLongitude = jsonData.geoResult[i].longitude;
+
+                        console.log(localLatitude);
+                        console.log(localLongitude);
                         var marker = new tomtom.Marker([localLatitude, localLongitude]);
-                        window.onLoad = function() { map.addLayer(marker); };
+
+                        map.addLayer(marker);
+
                     }
-                    
+
+                    /*
+                    var jsonData = {"geoResult":"retult"};
+                    console.log(jsonData);
+                    */
+
+                    /*
                     var jsonData = {"geoResult": [
                         {
-                           "latitude":33.772552,
-                           "longitude":-84.38003,
-                           "geohash":"dn5bpuh76gcr",
-                           "mapName":"TomTomMap",
-                           "houseNumber":"229",
-                           "type":"poi",
-                           "poiCategory":"7314004",
-                           "poiName":"Atlanta Hostel",
-                           "poiImportance":"0",
-                           "poiPhone":"+(1)-(404)-8759449",
-                           "poiWebsite":"www.atlantahostel.com",
-                           "poiPositionAccuracy":"0",
-                           "poiGeocodingAccuracy":"13",
-                           "distance":0.0,
-                           "street":"Ponce de Leon Ave NE",
-                           "city":"Atlanta",
-                           "state":"Georgia",
-                           "country":"United States",
-                           "countryISO3":"USA",
-                           "postcode":"30308",
-                           "formattedAddress":"Atlanta Hostel, 229 Ponce de Leon Ave NE, Atlanta, Georgia 30308, USA",
-                           "isCensusMicropolitanFlag":false,
-                           "widthMeters":1,
-                           "heightMeters":1,
-                           "score":1.0,
-                           "confidence":0.23214783,
-                           "iteration":0
+                            "latitude":33.772552,
+                            "longitude":-84.38003,
                         },
                         {
-                           "latitude":33.771478,
-                           "longitude":-84.361908,
-                           "geohash":"dnh007ct15f1",
-                           "mapName":"TomTomMap",
-                           "houseNumber":"790",
-                           "type":"poi",
-                           "poiCategory":"7314002",
-                           "poiName":"Bed and Breakfast Atlanta",
-                           "poiImportance":"0",
-                           "poiPhone":"+(1)-(404)-8750525",
-                           "poiPositionAccuracy":"0",
-                           "poiGeocodingAccuracy":"11",
-                           "distance":0.0,
-                           "street":"North Ave NE",
-                           "city":"Atlanta",
-                           "state":"Georgia",
-                           "country":"United States",
-                           "countryISO3":"USA",
-                           "postcode":"30306",
-                           "formattedAddress":"Bed and Breakfast Atlanta, 790 North Ave NE, Atlanta, Georgia 30306, USA",
-                           "isCensusMicropolitanFlag":false,
-                           "widthMeters":1,
-                           "heightMeters":1,
-                           "score":0.7091187238693237,
-                           "confidence":0.16462037,
-                           "iteration":0
-                        },
-                        {
-                           "latitude":33.772899,
-                           "longitude":-84.380994,
-                           "geohash":"dn5bpu5tkkdt",
-                           "mapName":"TomTomMap",
-                           "houseNumber":"198",
-                           "type":"poi",
-                           "poiCategory":"7314003",
-                           "poiName":"198 Pence Courtyard",
-                           "poiImportance":"0",
-                           "poiPhone":"+(1)-(404)-8761773",
-                           "poiBrandname":"Courtyard",
-                           "poiPositionAccuracy":"0",
-                           "poiGeocodingAccuracy":"11",
-                           "distance":0.0,
-                           "street":"Ponce de Leon Ave NE",
-                           "city":"Atlanta",
-                           "state":"Georgia",
-                           "country":"United States",
-                           "countryISO3":"USA",
-                           "postcode":"30308",
-                           "formattedAddress":"198 Pence Courtyard, 198 Ponce de Leon Ave NE, Atlanta, Georgia 30308, USA",
-                           "isCensusMicropolitanFlag":false,
-                           "widthMeters":1,
-                           "heightMeters":1,
-                           "score":0.7091187238693237,
-                           "confidence":0.16462037,
-                           "iteration":0
-                        },
-                        {
-                           "latitude":33.7732,
-                           "longitude":-84.368871,
-                           "geohash":"dnh00hhrnuf1",
-                           "mapName":"TomTomMap",
-                           "houseNumber":"551",
-                           "type":"poi",
-                           "poiCategory":"7314003",
-                           "poiName":"Ponce De Leon Hotel",
-                           "poiImportance":"0",
-                           "poiPhone":"+(1)-(404)-8731420",
-                           "poiPositionAccuracy":"0",
-                           "poiGeocodingAccuracy":"11",
-                           "distance":0.0,
-                           "street":"Ponce de Leon Ave NE",
-                           "city":"Atlanta",
-                           "state":"Georgia",
-                           "country":"United States",
-                           "countryISO3":"USA",
-                           "postcode":"30308",
-                           "formattedAddress":"Ponce De Leon Hotel, 551 Ponce de Leon Ave NE, Atlanta, Georgia 30308, USA",
-                           "isCensusMicropolitanFlag":false,
-                           "widthMeters":1,
-                           "heightMeters":1,
-                           "score":0.7091187238693237,
-                           "confidence":0.16462037,
-                           "iteration":0
-                        },
-                        {
-                           "latitude":33.749481,
-                           "longitude":-84.403434,
-                           "geohash":"djgzzrgkcrq0",
-                           "mapName":"TomTomMap",
-                           "houseNumber":"186",
-                           "type":"poi",
-                           "poiCategory":"7314003",
-                           "poiName":"Castleberry Inn & Suites",
-                           "poiImportance":"0",
-                           "poiPhone":"+(1)-(404)-8934663",
-                           "poiWebsite":"www.castleberryinn.com",
-                           "poiPositionAccuracy":"0",
-                           "poiGeocodingAccuracy":"11",
-                           "distance":0.0,
-                           "street":"Northside Dr SW",
-                           "city":"Atlanta",
-                           "state":"Georgia",
-                           "country":"United States",
-                           "countryISO3":"USA",
-                           "postcode":"30313",
-                           "formattedAddress":"Castleberry Inn & Suites, 186 Northside Dr SW, Atlanta, Georgia 30313, USA",
-                           "isCensusMicropolitanFlag":false,
-                           "widthMeters":1,
-                           "heightMeters":1,
-                           "score":0.6297875046730042,
-                           "confidence":0.1462038,
-                           "iteration":0
-                        },
-                        {
-                           "latitude":33.771024,
-                           "longitude":-84.395226,
-                           "geohash":"dn5bpec62xnm",
-                           "mapName":"TomTomMap",
-                           "houseNumber":"244",
-                           "type":"poi",
-                           "poiCategory":"7314003",
-                           "poiName":"Hampton Inn Atlanta-Georgia Tech-Downtown",
-                           "poiImportance":"0",
-                           "poiPhone":"+(1)-(404)-8810881",
-                           "poiBrandname":"Hampton Inn",
-                           "poiPositionAccuracy":"0",
-                           "poiGeocodingAccuracy":"11",
-                           "distance":0.0,
-                           "street":"North Ave NW",
-                           "city":"Atlanta",
-                           "state":"Georgia",
-                           "country":"United States",
-                           "countryISO3":"USA",
-                           "postcode":"30313",
-                           "formattedAddress":"Hampton Inn Atlanta-Georgia Tech-Downtown, 244 North Ave NW, Atlanta, Georgia 30313, USA",
-                           "isCensusMicropolitanFlag":false,
-                           "widthMeters":1,
-                           "heightMeters":1,
-                           "score":0.5504562854766846,
-                           "confidence":0.12778723,
-                           "iteration":0
+                            "latitude":33.771478,
+                            "longitude":-84.361908,
                         }
-
                     ]};
+
+                    console.log(jsonData.geoResult[0].latitude + " "
+                        + jsonData.geoResult[1].longitude);
+                    */
+                    // $.each(jsonData, function(i, item) {
+                    //     map.addLayer(new tomtom.Marker([37.78008, -122.42017]));
+                    // });
+
+                    //console.log(jqxhr.longitude);
+                    // $(jqxhr).each(function(i) {
+                    //     console.log(i.latitude+ " " + i.longitude);
+                    //     //map.addLayer(new tomtom.Marker([i.latitude, i.longitude]));
+                    // });
+                    /*
+                    console.log('really parse');
+                    var json = $.parseJSON(data);
+                    console.log(json);
+                    $(json).each(function(i){
+                        console.log(i);
+                        console.log("i.longitude = " + i.longitude +
+                            "i.latitude = " + i.latitude);
+                    });*/
+
+
 
                     //console.log(jsonData.geoResult[3].latitude);
                 }
@@ -231,7 +277,7 @@
 
 
         </script>
-        
+
         <style type="text/css">
             html, body {
                 width: 100%;
