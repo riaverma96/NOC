@@ -48,6 +48,8 @@
 
 
 <div id="section">
+<head>
+h1{font-family:verdana;}
 <h2 align="center">About</h2>
 <p align="center">NOC enables people to find safe places of accomdation when traveling. NOC maps crime data provided by city governments and integrates that information with the TOMTOM API in order to cross map locatios's crime alert level and hotels. Please click on a city of your choice on the map below for a mapping of your secure hotel options.
 
