@@ -17,7 +17,7 @@
 }
 #nav {
     line-height:30px;
-    background-color:#eeeeee;
+    background-color:white;
     height:300px;
     width:100px;
     float:left;
@@ -25,11 +25,12 @@
 }
 #section {
     width:screen.width;
+    background-color:white;
     float:center;
     padding:10px;        
 }
 #footer {
-    background-color:black;
+    background-color:white;
     color:white;
     clear:both;
     text-align:center;
@@ -48,7 +49,7 @@
 
 <div id="section">
 <h2 align="center">About</h2>
-<p align="center">NOC enables people to find safe places of accomdation when traveling. NOC maps crime data provided by city governemnts  Put info about it here.
+<p align="center">Put info about it here.
 
 </p>
 <div style="text-align:center">    
@@ -58,7 +59,7 @@
 
 
 <div id="footer">
-VTHacks 2015 Reppin Georgia Tech
+VTHacks 2015
 </div>
 
 </body>
