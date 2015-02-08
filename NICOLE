@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="/Users/riaverma/Desktop/VTHack/jquery-1.11.2.js"></script>
+        <script src="jquery-1.11.2.js"></script>
         <meta charset="UTF-8">
         <title>TomTom JavaScript SDK - Map</title>
         <link rel="stylesheet" type="text/css" href="../css/tomtom.map.min.css" />
@@ -31,11 +31,857 @@
                     zoom: 12
                 });
 
-                // add some markers
-                map.addLayer(new tomtom.Marker([33.762, -84.000]));
-                map.addLayer(new tomtom.Marker([39.73845, -104.98485]));
-                map.addLayer(new tomtom.Marker([34.05224, -118.24334]));
-                map.addLayer(new tomtom.Marker([37.78008, -122.42017]));
+                var jsonData2 = {"geoResult": [
+                {
+                  "ID":7540828,
+                  "Date":"1/1/15",
+                  "Location":"979 SIMS AVE NW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.45348,
+                  "ycoordinate":33.78144
+                },
+                {
+                  "ID":7540833,
+                  "Date":"1/1/15",
+                  "Location":"415 FAIRBURN RD SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.50968,
+                  "ycoordinate":33.74349
+                },
+                {
+                  "ID":7540834,
+                  "Date":"1/1/15",
+                  "Location":"415 FAIRBURN RD SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.50968,
+                  "ycoordinate":33.74349
+                },
+                {
+                  "ID":7540839,
+                  "Date":"1/1/15",
+                  "Location":"1231 CAMPBELLTON PL SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.42831,
+                  "ycoordinate":33.71759
+                },
+                {
+                  "ID":7540843,
+                  "Date":"1/1/15",
+                  "Location":"550 PEACHTREE ST NE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.38554,
+                  "ycoordinate":33.76929
+                },
+                {
+                  "ID":7540844,
+                  "Date":"1/1/15",
+                  "Location":"550 PEACHTREE ST NE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.38554,
+                  "ycoordinate":33.76929
+                },
+                {
+                  "ID":7540849,
+                  "Date":"1/1/15",
+                  "Location":"445 CAPITOL AVE SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.38909,
+                  "ycoordinate":33.74245
+                },
+                {
+                  "ID":7540853,
+                  "Date":"1/1/15",
+                  "Location":"3513 PARC CIR SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.4975,
+                  "ycoordinate":33.69867
+                },
+                {
+                  "ID":7540861,
+                  "Date":"1/11/15",
+                  "Location":"3200 LENOX RD",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.40453,
+                  "ycoordinate":33.74889
+                },
+                {
+                  "ID":7540880,
+                  "Date":"1/1/15",
+                  "Location":"2858 MEMORIAL DR SE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.2934,
+                  "ycoordinate":33.74744
+                },
+                {
+                  "ID":7540904,
+                  "Date":"1/2/15",
+                  "Location":"213 FAIRBURN RD NW @FAIRBURN GORDON APT",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.50395,
+                  "ycoordinate":33.76132
+                },
+                {
+                  "ID":7540909,
+                  "Date":"1/2/15",
+                  "Location":"1870 CAMPBELLTON RD SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.44852,
+                  "ycoordinate":33.7076
+                },
+                {
+                  "ID":7540912,
+                  "Date":"1/2/15",
+                  "Location":"370 OAKLAND PARK SE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.37566,
+                  "ycoordinate":33.74435
+                },
+                {
+                  "ID":7540942,
+                  "Date":"1/2/15",
+                  "Location":"89 ELLIS ST",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.38477,
+                  "ycoordinate":33.75813
+                },
+                {
+                  "ID":7540980,
+                  "Date":"1/2/15",
+                  "Location":"3378 GREENBRIAR PKWY SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.50129,
+                  "ycoordinate":33.68299
+                },
+                {
+                  "ID":7540984,
+                  "Date":"1/2/15",
+                  "Location":"816 WESTMONT RD SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.43712,
+                  "ycoordinate":33.73298
+                },
+                {
+                  "ID":7540985,
+                  "Date":"1/2/15",
+                  "Location":"816 WESTMONT RD SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.43712,
+                  "ycoordinate":33.73298
+                },
+                {
+                  "ID":7541019,
+                  "Date":"1/3/15",
+                  "Location":"415 JAMES P BRAWLEY BLVD",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.41229,
+                  "ycoordinate":33.76621
+                },
+                {
+                  "ID":7541028,
+                  "Date":"1/3/15",
+                  "Location":"1327 ROBERTS DR SE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.36969,
+                  "ycoordinate":33.71876
+                },
+                {
+                  "ID":7541049,
+                  "Date":"1/3/15",
+                  "Location":"951 COLEMAN ST SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.40419,
+                  "ycoordinate":33.72895
+                },
+                {
+                  "ID":7541056,
+                  "Date":"1/3/15",
+                  "Location":"2020 BOLTON RD NW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.47594,
+                  "ycoordinate":33.81125
+                },
+                {
+                  "ID":7541059,
+                  "Date":"1/3/15",
+                  "Location":"828 RALPH MCGILL BLVD NE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.36014,
+                  "ycoordinate":33.76777
+                },
+                {
+                  "ID":7541061,
+                  "Date":"1/3/15",
+                  "Location":"1901 MYRTLE DR SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.4551,
+                  "ycoordinate":33.70357
+                },
+                {
+                  "ID":7541075,
+                  "Date":"1/4/15",
+                  "Location":"2440 BARGE RD SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.50615,
+                  "ycoordinate":33.68847
+                },
+                {
+                  "ID":7541111,
+                  "Date":"1/4/15",
+                  "Location":"228 LINE RD SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.51532,
+                  "ycoordinate":33.74782
+                },
+                {
+                  "ID":7541113,
+                  "Date":"1/4/15",
+                  "Location":"2 10TH ST NE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.38737,
+                  "ycoordinate":33.78158
+                },
+                {
+                  "ID":7541128,
+                  "Date":"1/5/15",
+                  "Location":"1935 ALISON CT SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.45148,
+                  "ycoordinate":33.70094
+                },
+                {
+                  "ID":7541171,
+                  "Date":"1/5/15",
+                  "Location":"3450 FORREST PARK RD SE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.35549,
+                  "ycoordinate":33.66061
+                },
+                {
+                  "ID":7541172,
+                  "Date":"1/5/15",
+                  "Location":"3450 FORREST PARK RD SE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.35549,
+                  "ycoordinate":33.66061
+                },
+                {
+                  "ID":7541180,
+                  "Date":"1/5/15",
+                  "Location":"1122 CRESCENT AVE NE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.3845,
+                  "ycoordinate":33.78533
+                },
+                {
+                  "ID":7541222,
+                  "Date":"1/5/15",
+                  "Location":"500 WEST PACES FERRY RD",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.40333,
+                  "ycoordinate":33.84488
+                },
+                {
+                  "ID":7541223,
+                  "Date":"1/5/15",
+                  "Location":"500 WEST PACES FERRY RD",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.40333,
+                  "ycoordinate":33.84488
+                },
+                {
+                  "ID":7541253,
+                  "Date":"1/5/15",
+                  "Location":"771 LINDBERGH DR NE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.36241,
+                  "ycoordinate":33.82055
+                },
+                {
+                  "ID":7541255,
+                  "Date":"1/6/15",
+                  "Location":"2075 ALISON CT SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.45656,
+                  "ycoordinate":33.70105
+                },
+                {
+                  "ID":7541267,
+                  "Date":"1/6/15",
+                  "Location":"3200 LENOX RD NE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.35825,
+                  "ycoordinate":33.84293
+                },
+                {
+                  "ID":7541299,
+                  "Date":"1/6/15",
+                  "Location":"889 MITCHELL ST SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.41674,
+                  "ycoordinate":33.7536
+                },
+                {
+                  "ID":7541328,
+                  "Date":"1/7/15",
+                  "Location":"1964 KIMBERLY RD SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.52249,
+                  "ycoordinate":33.70037
+                },
+                {
+                  "ID":7541333,
+                  "Date":"1/7/15",
+                  "Location":"163 PONCE DE LEON AVE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.38209,
+                  "ycoordinate":33.77211
+                },
+                {
+                  "ID":7541334,
+                  "Date":"1/7/15",
+                  "Location":"162 CHAPPELL RD NW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.43368,
+                  "ycoordinate":33.75918
+                },
+                {
+                  "ID":7541361,
+                  "Date":"1/7/15",
+                  "Location":"1974 SYLVAN RD SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.41803,
+                  "ycoordinate":33.70008
+                },
+                {
+                  "ID":7541375,
+                  "Date":"1/7/15",
+                  "Location":"1620 HOLLYWOOD RD NW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.47023,
+                  "ycoordinate":33.79988
+                },
+                {
+                  "ID":7541390,
+                  "Date":"1/7/15",
+                  "Location":"828 MCDONOUGH",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.35977,
+                  "ycoordinate":33.70926
+                },
+                {
+                  "ID":7541400,
+                  "Date":"1/7/15",
+                  "Location":"62 HARWELL RD NW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.49353,
+                  "ycoordinate":33.75384
+                },
+                {
+                  "ID":7541401,
+                  "Date":"1/7/15",
+                  "Location":"62 HARWELL RD NW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.49353,
+                  "ycoordinate":33.75384
+                },
+                {
+                  "ID":7541407,
+                  "Date":"1/8/15",
+                  "Location":"994 BURNS DR SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.42079,
+                  "ycoordinate":33.71167
+                },
+                {
+                  "ID":7541408,
+                  "Date":"1/8/15",
+                  "Location":"213 FAIRBURN RD NW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.50424,
+                  "ycoordinate":33.76136
+                },
+                {
+                  "ID":7541409,
+                  "Date":"1/8/15",
+                  "Location":"213 FAIRBURN RD NW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.50424,
+                  "ycoordinate":33.76136
+                },
+                {
+                  "ID":7541410,
+                  "Date":"1/8/15",
+                  "Location":"1020 LAWTON ST SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.42324,
+                  "ycoordinate":33.7279
+                },
+                {
+                  "ID":7541421,
+                  "Date":"1/8/15",
+                  "Location":"3540 N CAMP CREEK PKWY SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.50299,
+                  "ycoordinate":33.67051
+                },
+                {
+                  "ID":7541428,
+                  "Date":"1/8/15",
+                  "Location":"230 WESTVIEW PL SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.43404,
+                  "ycoordinate":33.74882
+                },
+                {
+                  "ID":7541473,
+                  "Date":"1/8/15",
+                  "Location":"675 METROPOLITAN PKWY SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.41018,
+                  "ycoordinate":33.73653
+                },
+                {
+                  "ID":7541477,
+                  "Date":"1/9/15",
+                  "Location":"470 COURTLAND ST NE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.38419,
+                  "ycoordinate":33.76716
+                },
+                {
+                  "ID":7541480,
+                  "Date":"1/9/15",
+                  "Location":"2370 METROPOLITAN PKWY SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.40807,
+                  "ycoordinate":33.69014
+                },
+                {
+                  "ID":7541481,
+                  "Date":"1/9/15",
+                  "Location":"2370 METROPOLITAN PKWY SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.40807,
+                  "ycoordinate":33.69014
+                },
+                {
+                  "ID":7541485,
+                  "Date":"1/9/15",
+                  "Location":"2115 PIEDMONT RD NE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.36659,
+                  "ycoordinate":33.81274
+                },
+                {
+                  "ID":7541495,
+                  "Date":"1/9/15",
+                  "Location":"2765 7TH ST SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.40354,
+                  "ycoordinate":33.67947
+                },
+                {
+                  "ID":7541522,
+                  "Date":"1/9/15",
+                  "Location":"971 COLEMAN ST SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.40416,
+                  "ycoordinate":33.7284
+                },
+                {
+                  "ID":7541535,
+                  "Date":"1/9/15",
+                  "Location":"1683 LAKEWOOD AVE SE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.38035,
+                  "ycoordinate":33.7083
+                },
+                {
+                  "ID":7541560,
+                  "Date":"1/10/15",
+                  "Location":"1384 MURPHY AVE SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.42471,
+                  "ycoordinate":33.71667
+                },
+                {
+                  "ID":7541561,
+                  "Date":"1/10/15",
+                  "Location":"1384 MURPHY AVE SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.42471,
+                  "ycoordinate":33.71667
+                },
+                {
+                  "ID":7541572,
+                  "Date":"1/10/15",
+                  "Location":"2600 OLD HAPEVILLE RD SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.39366,
+                  "ycoordinate":33.6835
+                },
+                {
+                  "ID":7541584,
+                  "Date":"1/10/15",
+                  "Location":"1783 STANTON RD SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.44416,
+                  "ycoordinate":33.70691
+                },
+                {
+                  "ID":7541602,
+                  "Date":"1/10/15",
+                  "Location":"I-85 NB EXPY / ARTHUR LANGSTON EXPY",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.40469,
+                  "ycoordinate":33.69704
+                },
+                {
+                  "ID":7541631,
+                  "Date":"1/11/15",
+                  "Location":"88 VANIRA AVE SE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.38545,
+                  "ycoordinate":33.7296
+                },
+                {
+                  "ID":7541638,
+                  "Date":"1/11/15",
+                  "Location":"197 HENDRIX AVE SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.39447,
+                  "ycoordinate":33.73257
+                },
+                {
+                  "ID":7541639,
+                  "Date":"1/11/15",
+                  "Location":"197 HENDRIX AVE SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.39447,
+                  "ycoordinate":33.73257
+                },
+                {
+                  "ID":7541641,
+                  "Date":"1/11/15",
+                  "Location":"1700 STANTON RD SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.44364,
+                  "ycoordinate":33.70907
+                },
+                {
+                  "ID":7541680,
+                  "Date":"1/11/15",
+                  "Location":"460 THOMASVILLE BLVD SE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.35923,
+                  "ycoordinate":33.70571
+                },
+                {
+                  "ID":7541686,
+                  "Date":"1/11/15",
+                  "Location":"1051 MORELAND DR SE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.32133,
+                  "ycoordinate":33.75086
+                },
+                {
+                  "ID":7541687,
+                  "Date":"1/11/15",
+                  "Location":"1051 MORELAND DR SE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.32133,
+                  "ycoordinate":33.75086
+                },
+                {
+                  "ID":7541698,
+                  "Date":"1/11/15",
+                  "Location":"3405 LENOX RD NE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.35947,
+                  "ycoordinate":33.848
+                },
+                {
+                  "ID":7541704,
+                  "Date":"1/11/15",
+                  "Location":"1690 FORT VALLEY DR SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.45012,
+                  "ycoordinate":33.70896
+                },
+                {
+                  "ID":7541715,
+                  "Date":"1/12/15",
+                  "Location":"193 HENDRIX AVE SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.39433,
+                  "ycoordinate":33.73255
+                },
+                {
+                  "ID":7541716,
+                  "Date":"1/12/15",
+                  "Location":"193 HENDRIX AVE SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.39433,
+                  "ycoordinate":33.73255
+                },
+                {
+                  "ID":7541723,
+                  "Date":"1/12/15",
+                  "Location":"1932 HOSEA L WILLIAMS DR NE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.32397,
+                  "ycoordinate":33.75292
+                },
+                {
+                  "ID":7541724,
+                  "Date":"1/12/15",
+                  "Location":"1932 HOSEA L WILLIAMS DR NE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.32397,
+                  "ycoordinate":33.75292
+                },
+                {
+                  "ID":7541793,
+                  "Date":"1/12/15",
+                  "Location":"2460 MARTIN L KING JR DR SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.46781,
+                  "ycoordinate":33.75187
+                },
+                {
+                  "ID":7541806,
+                  "Date":"1/12/15",
+                  "Location":"9700 SPINE RD",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.42922,
+                  "ycoordinate":33.65567
+                },
+                {
+                  "ID":7541887,
+                  "Date":"1/13/15",
+                  "Location":"91 WHITEFOORD AVE SE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.34246,
+                  "ycoordinate":33.75081
+                },
+                {
+                  "ID":7541888,
+                  "Date":"1/13/15",
+                  "Location":"91 WHITEFOORD AVE SE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.34246,
+                  "ycoordinate":33.75081
+                },
+                {
+                  "ID":7541899,
+                  "Date":"1/14/15",
+                  "Location":"2738 FAIRLANE DR SE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.38015,
+                  "ycoordinate":33.68002
+                },
+                {
+                  "ID":7541900,
+                  "Date":"1/14/15",
+                  "Location":"2738 FAIRLANE DR SE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.38015,
+                  "ycoordinate":33.68002
+                },
+                {
+                  "ID":7541929,
+                  "Date":"1/14/15",
+                  "Location":"205 PINE ST NW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.39321,
+                  "ycoordinate":33.7679
+                },
+                {
+                  "ID":7541954,
+                  "Date":"1/14/15",
+                  "Location":"477 PEACHTREE ST NE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.38524,
+                  "ycoordinate":33.76764
+                },
+                {
+                  "ID":7541955,
+                  "Date":"1/14/15",
+                  "Location":"477 PEACHTREE ST NE",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.38524,
+                  "ycoordinate":33.76764
+                },
+                {
+                  "ID":7541962,
+                  "Date":"1/14/15",
+                  "Location":"1232 MARTIN L KING JR DR SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.42773,
+                  "ycoordinate":33.75325
+                },
+                {
+                  "ID":7541963,
+                  "Date":"1/14/15",
+                  "Location":"1212 JAMES JACKSON PKWY NW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.47416,
+                  "ycoordinate":33.79333
+                },
+                {
+                  "ID":7541991,
+                  "Date":"1/15/15",
+                  "Location":"350 JOSEPH E LOWERY ",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.41747,
+                  "ycoordinate":33.76347
+                },
+                {
+                  "ID":7542016,
+                  "Date":"1/15/15",
+                  "Location":"1153 W PEACHTREE ST NW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.38781,
+                  "ycoordinate":33.78667
+                },
+                {
+                  "ID":7542067,
+                  "Date":"1/15/15",
+                  "Location":"50 PEYTON PL SW ",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.47644,
+                  "ycoordinate":33.75426
+                },
+                {
+                  "ID":7542082,
+                  "Date":"1/16/15",
+                  "Location":"405 FAIRBURN RD SW @WILDWOOD PARK TOWNH",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.51321,
+                  "ycoordinate":33.74465
+                },
+                {
+                  "ID":7542148,
+                  "Date":"1/16/15",
+                  "Location":"420 RAWSON ST SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.40085,
+                  "ycoordinate":33.74299
+                },
+                {
+                  "ID":7542149,
+                  "Date":"1/16/15",
+                  "Location":"420 RAWSON ST SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.40085,
+                  "ycoordinate":33.74299
+                },
+                {
+                  "ID":7542158,
+                  "Date":"1/17/15",
+                  "Location":"2980 DELMAR LN NW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.48481,
+                  "ycoordinate":33.75517
+                },
+                {
+                  "ID":7542159,
+                  "Date":"1/17/15",
+                  "Location":"2980 DELMAR LN NW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.48481,
+                  "ycoordinate":33.75517
+                },
+                {
+                  "ID":7542198,
+                  "Date":"1/17/15",
+                  "Location":"1850 METROPOLITAN PKWY SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.40795,
+                  "ycoordinate":33.70369
+                },
+                {
+                  "ID":7542208,
+                  "Date":"1/17/15",
+                  "Location":"2346 SANDSPRING DR SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.539,
+                  "ycoordinate":33.70259
+                },
+                {
+                  "ID":7542238,
+                  "Date":"1/17/15",
+                  "Location":"3770 PRINCETON LAKES PKWY SW",
+                  "Type":"AGG ASSAULT",
+                  "xcoordinate":-84.51051,
+                  "ycoordinate":33.65806
+                },
+                {
+                  "ID":7541612,
+                  "Date":"1/10/15",
+                  "Location":"330 MCDANIEL ST SW",
+                  "Type":"HOMICIDE",
+                  "xcoordinate":-84.40567,
+                  "ycoordinate":33.74578
+                },
+                {
+                  "ID":7541970,
+                  "Date":"1/14/15",
+                  "Location":"2909 CAMPBELLTON RD SW",
+                  "Type":"HOMICIDE",
+                  "xcoordinate":-84.48265,
+                  "ycoordinate":33.69869
+                },
+                {
+                  "ID":7541072,
+                  "Date":"1/4/15",
+                  "Location":"2860 CAMPBELLTON ROAD",
+                  "Type":"RAPE",
+                  "xcoordinate":-84.4821,
+                  "ycoordinate":33.69842
+                },
+                {
+                  "ID":7541076,
+                  "Date":"1/4/15",
+                  "Location":"3725 PRINCETON LAKES PKWY SW",
+                  "Type":"RAPE",
+                  "xcoordinate":-84.50877,
+                  "ycoordinate":33.65777
+                },
+                {
+                  "ID":7541412,
+                  "Date":"1/8/15",
+                  "Location":"754 MAGNOLIA ST NW",
+                  "Type":"RAPE",
+                  "xcoordinate":-84.41217,
+                  "ycoordinate":33.75794
+                },
+                {
+                  "ID":7541453,
+                  "Date":"1/8/15",
+                  "Location":"172 RACINE ST SW",
+                  "Type":"RAPE",
+                  "xcoordinate":-84.44105,
+                  "ycoordinate":33.75053
+                },
+                {
+                  "ID":7541511,
+                  "Date":"1/9/15",
+                  "Location":"880 GLENWOOD AVE SE",
+                  "Type":"RAPE",
+                  "xcoordinate":-84.35903,
+                  "ycoordinate":33.74058
+                },
+                {
+                  "ID":7541585,
+                  "Date":"1/10/15",
+                  "Location":"165 MARION PL NE",
+                  "Type":"RAPE",
+                  "xcoordinate":-84.34501,
+                  "ycoordinate":33.75795
+                }
+              ]
+              }
 
                 var jsonData = {"geoResult": [
                     {
@@ -209,69 +1055,255 @@
                        "score":0.5504562854766846,
                        "confidence":0.12778723,
                        "iteration":0
-                    }
-
+                    },
+                    {
+                      "latitude": 33.84904,
+                      "longitude": -84.364321,
+                      "geohash": "dnh084pbby6u",
+                      "mapName": "TomTomMap",
+                      "houseNumber": "3400",
+                      "type": "poi",
+                      "poiCategory": "7314003",
+                      "poiName": "Wyndham Hotels & Resorts",
+                      "poiImportance": "0",
+                      "poiPhone": "+(1)-(404)-9260800",
+                      "poiWebsite": "www.wyndham.com",
+                      "poiBrandname": "Wyndham",
+                      "poiPositionAccuracy": "0",
+                      "poiGeocodingAccuracy": "13",
+                      "distance": 0.0,
+                      "street": "Peachtree Rd NE",
+                      "city": "Atlanta",
+                      "state": "Georgia",
+                      "country": "United States",
+                      "countryISO3": "USA",
+                      "postcode": "30326",
+                      "formattedAddress": "Wyndham Hotels & Resorts, 3400 Peachtree Rd NE, Atlanta, Georgia 30326, USA",
+                      "isCensusMicropolitanFlag": false,
+                      "widthMeters": 1,
+                      "heightMeters": 1,
+                      "score": 1.0,
+                      "confidence": 0.35626358,
+                      "iteration": 0
+                  },
+                  {
+                      "latitude": 33.851563,
+                      "longitude": -84.364692,
+                      "geohash": "dnh084rx8hwn",
+                      "mapName": "TomTomMap",
+                      "houseNumber": "3424",
+                      "type": "poi",
+                      "poiCategory": "7314003",
+                      "poiName": "Interstate Hotels & Resorts",
+                      "poiImportance": "0",
+                      "poiPhone": "+(1)-(404)-9201599",
+                      "poiPositionAccuracy": "0",
+                      "poiGeocodingAccuracy": "11",
+                      "distance": 0.0,
+                      "street": "Peachtree Rd NE",
+                      "city": "Atlanta",
+                      "state": "Georgia",
+                      "country": "United States",
+                      "countryISO3": "USA",
+                      "postcode": "30326",
+                      "formattedAddress": "Interstate Hotels & Resorts, 3424 Peachtree Rd NE, Atlanta, Georgia 30326, USA",
+                      "isCensusMicropolitanFlag": false,
+                      "widthMeters": 1,
+                      "heightMeters": 1,
+                      "score": 1.0,
+                      "confidence": 0.35626358,
+                      "iteration": 0
+                  },
+                  {
+                      "latitude": 33.791983,
+                      "longitude": -84.398053,
+                      "geohash": "dn5bprxhwf4q",
+                      "mapName": "TomTomMap",
+                      "houseNumber": "361",
+                      "type": "poi",
+                      "poiCategory": "7314003",
+                      "poiName": "Twelve Hotels and Residences Corporate Office",
+                      "poiImportance": "0",
+                      "poiPhone": "+(1)-(404)-9611200",
+                      "poiPositionAccuracy": "0",
+                      "poiGeocodingAccuracy": "11",
+                      "distance": 0.0,
+                      "street": "17th St NW",
+                      "city": "Atlanta",
+                      "state": "Georgia",
+                      "country": "United States",
+                      "countryISO3": "USA",
+                      "postcode": "30363",
+                      "formattedAddress": "Twelve Hotels and Residences Corporate Office, 361 17th St NW, Atlanta, Georgia 30363, USA",
+                      "isCensusMicropolitanFlag": false,
+                      "widthMeters": 1,
+                      "heightMeters": 1,
+                      "score": 0.8069106340408325,
+                      "confidence": 0.28747287,
+                      "iteration": 0
+                  },
+                  {
+                      "latitude": 33.763667,
+                      "longitude": -84.387024,
+                      "geohash": "dn5bpdrpxgdq",
+                      "mapName": "TomTomMap",
+                      "houseNumber": "330",
+                      "type": "poi",
+                      "poiCategory": "7314003",
+                      "poiName": "Amersuites",
+                      "poiImportance": "0",
+                      "poiPhone": "+(1)-(404)-5240584",
+                      "poiPositionAccuracy": "0",
+                      "poiGeocodingAccuracy": "11",
+                      "distance": 0.0,
+                      "street": "Peachtree St NE",
+                      "city": "Atlanta",
+                      "state": "Georgia",
+                      "country": "United States",
+                      "countryISO3": "USA",
+                      "postcode": "30308",
+                      "formattedAddress": "Amersuites, 330 Peachtree St NE, Atlanta, Georgia 30308, USA",
+                      "isCensusMicropolitanFlag": false,
+                      "widthMeters": 1,
+                      "heightMeters": 1,
+                      "score": 1.0,
+                      "confidence": 0.26158717,
+                      "iteration": 3
+                  },
+                  {
+                      "latitude": 33.770289,
+                      "longitude": -84.388167,
+                      "geohash": "dn5bpewqjnju",
+                      "mapName": "TomTomMap",
+                      "houseNumber": "590",
+                      "type": "poi",
+                      "poiCategory": "7314003",
+                      "poiName": "Melia Hotel",
+                      "poiImportance": "0",
+                      "poiPhone": "+(1)-(404)-8779000",
+                      "poiPositionAccuracy": "0",
+                      "poiGeocodingAccuracy": "11",
+                      "distance": 0.0,
+                      "street": "W Peachtree St NW",
+                      "city": "Atlanta",
+                      "state": "Georgia",
+                      "country": "United States",
+                      "countryISO3": "USA",
+                      "postcode": "30308",
+                      "formattedAddress": "Melia Hotel, 590 W Peachtree St NW, Atlanta, Georgia 30308, USA",
+                      "isCensusMicropolitanFlag": false,
+                      "widthMeters": 1,
+                      "heightMeters": 1,
+                      "score": 1.0,
+                      "confidence": 0.26158717,
+                      "iteration": 3
+                  },
+                  {
+                      "latitude": 33.772552,
+                      "longitude": -84.38003,
+                      "geohash": "dn5bpuh76gcr",
+                      "mapName": "TomTomMap",
+                      "houseNumber": "229",
+                      "type": "poi",
+                      "poiCategory": "7314004",
+                      "poiName": "Atlanta Hostel",
+                      "poiImportance": "0",
+                      "poiPhone": "+(1)-(404)-8759449",
+                      "poiWebsite": "www.atlantahostel.com",
+                      "poiPositionAccuracy": "0",
+                      "poiGeocodingAccuracy": "13",
+                      "distance": 0.0,
+                      "street": "Ponce de Leon Ave NE",
+                      "city": "Atlanta",
+                      "state": "Georgia",
+                      "country": "United States",
+                      "countryISO3": "USA",
+                      "postcode": "30308",
+                      "formattedAddress": "Atlanta Hostel, 229 Ponce de Leon Ave NE, Atlanta, Georgia 30308, USA",
+                      "isCensusMicropolitanFlag": false,
+                      "widthMeters": 1,
+                      "heightMeters": 1,
+                      "score": 1.0,
+                      "confidence": 0.26158717,
+                      "iteration": 3
+                  },
+                  {
+                      "latitude": 33.762809,
+                      "longitude": -84.389776,
+                      "geohash": "dn5bpdm4xey0",
+                      "mapName": "TomTomMap",
+                      "houseNumber": "300",
+                      "type": "poi",
+                      "poiCategory": "7314003",
+                      "poiName": "Days Inn",
+                      "poiImportance": "0",
+                      "poiPhone": "+(1)-(404)-5231144",
+                      "poiWebsite": "www.daysinn.com",
+                      "poiBrandname": "Days Inn",
+                      "poiPositionAccuracy": "0",
+                      "poiGeocodingAccuracy": "11",
+                      "distance": 0.0,
+                      "street": "Spring St NW",
+                      "city": "Atlanta",
+                      "state": "Georgia",
+                      "country": "United States",
+                      "countryISO3": "USA",
+                      "postcode": "30308",
+                      "formattedAddress": "Days Inn, 300 Spring St NW, Atlanta, Georgia 30308, USA",
+                      "isCensusMicropolitanFlag": false,
+                      "widthMeters": 1,
+                      "heightMeters": 1,
+                      "score": 0.8228172063827515,
+                      "confidence": 0.21523844,
+                      "iteration": 3
+                  },
                 ]};
 
-                setPoints(map, jsonData);
+                var i = 0;
 
-                function setPoints(map, jsonData) { //longitude, latitude
-                    console.log('about to parse');
+                setPoints(map, jsonData, i);
 
-                    for (var i = 0; i < 6; i++) {
+                function determineColor(jsonData, jsonData2, i) {
+                    var count = 0;
+                    for (var j = 0; j < 106; j++) {
+                      var thislatitude = jsonData2.geoResult[j].xcoordinate;
+                      var thislongitude = jsonData2.geoResult[j].ycoordinate;
+                      if ((Math.abs(thislatitude - jsonData.geoResult[i].latitude) < .1) ||
+                        (Math.abs(thislongitude - jsonData.geoResult[i].longitude) < .1)) {
+                        count++;
+                      }
+                    }
+                    return count;
+                }
+
+                function setPoints(map, jsonData, i) { //longitude, latitude
+
+                    while (i < 13) {
                         var localLatitude = jsonData.geoResult[i].latitude;
                         var localLongitude = jsonData.geoResult[i].longitude;
-
-                        console.log(localLatitude);
-                        console.log(localLongitude);
-                        var marker = new tomtom.Marker([localLatitude, localLongitude]);
-
-                        map.addLayer(marker);
-
-                    }
-
-                    /*
-                    var jsonData = {"geoResult":"retult"};
-                    console.log(jsonData);
-                    */
-
-                    /*
-                    var jsonData = {"geoResult": [
-                        {
-                            "latitude":33.772552,
-                            "longitude":-84.38003,
-                        },
-                        {
-                            "latitude":33.771478,
-                            "longitude":-84.361908,
+                        if (determineColor(jsonData, jsonData2, i) <= 1) {
+                          tomtom.Marker.DEFAULT_MARKER_OPTIONS = {
+                          iconUrl: "hotelgreen.png",
+                          iconSize: [32, 37],
+                          iconAnchor: [ 17, 34 ]
+                          };
+                        } else if (determineColor(jsonData, jsonData2, i) >= 4) {
+                          tomtom.Marker.DEFAULT_MARKER_OPTIONS = {
+                          iconUrl: "hotelred.png",
+                          iconSize: [32, 37],
+                          iconAnchor: [ 17, 34 ]
+                          };
+                        } else {
+                          tomtom.Marker.DEFAULT_MARKER_OPTIONS = {
+                          iconUrl: "hotelyellow.png",
+                          iconSize: [32, 37],
+                          iconAnchor: [ 17, 34 ]
+                          };
                         }
-                    ]};
-
-                    console.log(jsonData.geoResult[0].latitude + " "
-                        + jsonData.geoResult[1].longitude);
-                    */
-                    // $.each(jsonData, function(i, item) {
-                    //     map.addLayer(new tomtom.Marker([37.78008, -122.42017]));
-                    // });
-
-                    //console.log(jqxhr.longitude);
-                    // $(jqxhr).each(function(i) {
-                    //     console.log(i.latitude+ " " + i.longitude);
-                    //     //map.addLayer(new tomtom.Marker([i.latitude, i.longitude]));
-                    // });
-                    /*
-                    console.log('really parse');
-                    var json = $.parseJSON(data);
-                    console.log(json);
-                    $(json).each(function(i){
-                        console.log(i);
-                        console.log("i.longitude = " + i.longitude +
-                            "i.latitude = " + i.latitude);
-                    });*/
-
-
-
-                    //console.log(jsonData.geoResult[3].latitude);
+                        var marker = new tomtom.Marker([localLatitude, localLongitude]);
+                        map.addLayer(marker);
+                        i++;
+                    }
                 }
             };
 
