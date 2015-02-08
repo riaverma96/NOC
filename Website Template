@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>NOC</title>
+<title>SafetyPin</title>
 <link rel="stylesheet" type="text/css" href="../css/tomtom.map.min.css" />
         <!--[if lte IE 8]><link rel="stylesheet" href="../css/tomtom.map.ie.min.css" /><![endif]-->
         <script type="text/javascript" src="../js/leaflet.js"></script>
@@ -31,7 +31,7 @@
 }
 #footer {
     background-color:white;
-    color:white;
+    color:black;
     clear:both;
     text-align:center;
    padding:5px;      
@@ -42,7 +42,7 @@
 <body>
 
 <div id="header">
-<img src="hellyeah.png" alt="NOC" style="height:15-px">
+<img src="SafetyPin_Header.png" alt="NOC" style="height:15-px">
 </div>
 
 
@@ -51,27 +51,29 @@
 <head>
 <font size = "4">
 <font face = "helvetica">
-<p align="center">Mapping crime statistics to hotel locations for more happy travels!
+<p align="center">Mapping crime statistics to hotel locations to safen your travel search
 
 <div id="section">
 <head>
 <font size = "3">
 <font face = "helvetica">
-<p align="center">Please click on a city of your choice on the map below for a display of your secure hotel options.
+<p align="center">Please click on a city of your choice on the map below for a display of your secure hotel options. (Only Atlanta available now)
 
 </p>
 <div style="text-align:center">    
-<a href="NICOLE.html"><img src="World_Map_PIMPED.png" alt="NOC" style="width:100%" ></a>
+<a href="NICOLE.html"><img src="World_Map_Atlanta_Star.png" alt="NOC" style="width:100%" ></a>
 </div>
 </div>
 
 <div id="section">
 <head>
-<font size = "2">
+<font size = "3">
 <font face = "helvetica">
-<p align="center">NOC maps crime data provided by city governments and integrates that information with the TomTom API in order to correlate a location's crime alert levels and hotels.
+<p align="center">SafetyPin maps crime data provided by city governments and integrates that information with the TomTom API in order to correlate a location's crime alert levels and hotels.
 
 <div id="footer">
+<font size = "1">
+<font face = "helvetica">
 VTHacks 2015 Reppin Georgia Tech
 </div>
 
