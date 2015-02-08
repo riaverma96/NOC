@@ -49,7 +49,7 @@
 
 <div id="section">
 <h2 align="center">About</h2>
-<p align="center">Put info about it here.
+<p align="center">NOC enables people to find safe places of accomdation when traveling. NOC maps crime data provided by city governemnts and integrates that information with the TOMTOM API in order to cross map locatios's crime alert level and hotels. Please click on a city of your choice on the map below for a mapping of your secure hotel options.
 
 </p>
 <div style="text-align:center">    
@@ -59,7 +59,7 @@
 
 
 <div id="footer">
-VTHacks 2015
+VTHacks 2015 Reppin Georgia Tech
 </div>
 
 </body>
