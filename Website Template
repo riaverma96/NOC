@@ -10,7 +10,7 @@
         <script type="text/javascript" src="apikey.js"></script>
 <style>
 #header {
-    background-color:black;
+    background-color:white;
     color:white;
     text-align:center;
     padding:5px;
@@ -24,8 +24,8 @@
     padding:5px;          
 }
 #section {
-    width:1100px;
-    float:left;
+    width:screen.width;
+    float:center;
     padding:10px;        
 }
 #footer {
@@ -41,26 +41,10 @@
 <body>
 
 <div id="header">
-<h1>NOC</h1>
-
-
+<img src="hellyeah.png" alt="NOC" style="height:15-px">
 </div>
 
-<body>
- <h2>NOC</h2>
- <img src="logo.xcf" alt="NOC" style="width:304px;height:228px">
-</body>
 
-
-
-<div id="nav" align="center">
-Created by:<br>
-<hr></hr>
-Ria V<br>
-Amreeta D<br>
-Jasmine P<br>
-Nicole H<br>
-</div>
 
 <div id="section">
 <h2 align="center">About</h2>
