@@ -56,9 +56,9 @@
 <div id="section">
 <font size = "3">
 <font face = "helvetica">
-<p align="center"><img src="hotelgreen.png" height="20" width="20"> is less than or equal to 2 crimes within blank feet <br> 
-<img src="hotelyellow.png" height="20" width="20"> is 3 or 4 crimes within blank feet <br>
-<img src="hotelred.png" height="20" width="20"> is greater than 4 crimes within blank feet
+<p align="center"><img src="hotelgreen.png" height="20" width="20"> is less than or equal to 2 crimes within .1 km <br> 
+<img src="hotelyellow.png" height="20" width="20"> is 3 or 4 crimes within .1 km <br>
+<img src="hotelred.png" height="20" width="20"> is greater than 4 crimes within .1 km
 </div>
 
 <div id="section">
